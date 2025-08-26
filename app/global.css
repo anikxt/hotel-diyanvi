@@ -12,26 +12,6 @@ pp-pangaia-medium.otf
 pp-pangaia-medium-italic.otf
 */
 
-@font-face {
-  font-family: 'PP Pangaia Medium';
-  src: url('/fonts/pp-pangaia-medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'PP Pangaia Medium Italic';
-  src: url('/fonts/pp-pangaia-medium-italic.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'PP Editorial Old Ultra Bold';
-  src: url('/fonts/pp-editorial-old-ultrabold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'PP Editorial Old Ultra Light';
-  src: url('/fonts/pp-editorial-old-ultralight.otf') format('opentype');
-}
-
 body {
   font-family: 'PP Pangaia Medium', sans-serif !important;
   font-weight: 500;
