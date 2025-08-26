@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@import url('/fonts/style.css');
+
+/* 
+pp-editorial-old-ultrabold.otf
+pp-editorial-old-light.otf
+pp-pangaia-medium.otf
+pp-pangaia-medium-italic.otf
+*/
+
+@font-face {
+  font-family: 'PP Pangaia Medium';
+  src: url('/fonts/pp-pangaia-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Pangaia Medium Italic';
+  src: url('/fonts/pp-pangaia-medium-italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial Old Ultra Bold';
+  src: url('/fonts/pp-editorial-old-ultrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial Old Ultra Light';
+  src: url('/fonts/pp-editorial-old-ultralight.otf') format('opentype');
+}
+
+body {
+  font-family: 'PP Pangaia Medium', sans-serif !important;
+  font-weight: 500;
+}
+
+/* color */
+.bg-primary {
+  background-color: #f6efe5;
+}
+
+/* text */
+.text-primary {
+  color: #ad1a1b;
+}
+
+.text-secondary {
+  color: #724947;
+}
+
+.text-tertiary {
+  color: #282828;
+}
+
+/* border */
+.border-primary {
+  border-color: #ad1a1b;
+}
+
+/* font */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-calistoga {
+  font-family: 'Calistoga', serif;
+}
+
+.font-pangaia-medium-italic {
+  font-family: 'PP Pangaia Medium Italic', serif;
+}
+
+.font-editorial-old-ultralight {
+  font-family: 'PP Editorial Old Ultra Light', serif;
+}
+
+.font-editorial-old-ultrabold {
+  font-family: 'PP Editorial Old Ultra Bold', serif;
+}
