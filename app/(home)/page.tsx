@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../components/layout/Header';
-import { HomeIntroSection } from './components';
+import { HomeIntro, ServicesOverview, AboutSection } from './components';
 
 export default function Page() {
   return (
     <div>
       <Header />
-      <HomeIntroSection />
+      <HomeIntro />
+      <AboutSection />
+      {/* <ServicesOverviewSection /> */}
     </div>
   );
 }
