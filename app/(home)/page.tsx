@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/layout/Header';
-import { HomeIntro, ServicesOverview, AboutSection } from './components';
+import { HomeIntro, AboutSection, ServicesOverview } from './components';
 
 export default function Page() {
   return (
@@ -8,7 +8,7 @@ export default function Page() {
       <Header />
       <HomeIntro />
       <AboutSection />
-      {/* <ServicesOverviewSection /> */}
+      <ServicesOverview />
     </div>
   );
 }

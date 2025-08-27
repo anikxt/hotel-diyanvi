@@ -32,6 +32,10 @@
   background-color: #515726;
 }
 
+.bg-tertiary {
+  background-color: #f9edde;
+}
+
 /* text */
 .text-primary {
   color: #ad1a1b;
@@ -45,9 +49,29 @@
   color: #282828;
 }
 
+.text-tertiary-light {
+  color: #f9edde;
+}
+
+.text-quaternary {
+  color: #515726;
+}
+
 /* border */
 .border-primary {
   border-color: #ad1a1b;
+}
+
+.border-secondary {
+  border-color: #d9d9d9;
+}
+
+.border-tertiary {
+  border-color: #f9edde;
+}
+
+.border-quaternary {
+  border-color: #515726;
 }
 
 /* font */
