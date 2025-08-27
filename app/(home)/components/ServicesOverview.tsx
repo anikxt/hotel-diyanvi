@@ -95,7 +95,7 @@ function ServicesOverviewSection() {
             <Image
               src="/images/home/vector-3.svg"
               alt="Vector 3"
-              className="w-[120px] h-[120px] object-cover"
+              className="w-[120px] h-[120px] object-contain"
               width={500}
               height={500}
             />
@@ -105,7 +105,7 @@ function ServicesOverviewSection() {
             <Image
               src="/images/home/vector-4.svg"
               alt="Vector 4"
-              className="w-[100px] h-[100px] object-cover"
+              className="w-[100px] h-[100px] object-contain"
               width={500}
               height={500}
             />
@@ -121,7 +121,7 @@ function ServicesOverviewSection() {
             <Image
               src="/images/home/vector-1.svg"
               alt="Vector 5"
-              className="w-[110px] h-[110px] object-cover"
+              className="w-[110px] h-[110px] object-contain"
               width={500}
               height={500}
             />
@@ -131,7 +131,7 @@ function ServicesOverviewSection() {
             <Image
               src="/images/home/vector-2.svg"
               alt="Vector 2"
-              className="w-[95px] h-[95px] object-cover"
+              className="w-[95px] h-[95px] object-contain"
               width={500}
               height={500}
             />

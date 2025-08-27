@@ -4,20 +4,14 @@ import Image from 'next/image';
 function AboutSection() {
   return (
     <div className="bg-primary min-h-screen flex flex-col gap-32">
-      <div className="flex flex-col gap-24">
-        <h3 className="text-tertiary font-calistoga w-fit self-center text-center text-2xl font-medium leading-tight uppercase border-b-2 border-primary">
-          ABOUT THE DIYANVI
-        </h3>
-
-        <div className="w-auto h-auto self-start">
-          <Image
-            src="/images/home/image-1.jpg"
-            alt="About The Diyanvi 1"
-            width={1440}
-            height={600}
-            className="object-cover"
-          />
-        </div>
+      <div className="w-auto h-auto self-start mt-16">
+        <Image
+          src="/images/home/image-1.jpg"
+          alt="About The Diyanvi 1"
+          width={1440}
+          height={600}
+          className="object-cover"
+        />
       </div>
 
       <div className="text-primary font-pangaia-medium text-left text-8xl font-medium leading-tight ml-16">

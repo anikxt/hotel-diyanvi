@@ -14,13 +14,18 @@
 }
 
 @font-face {
-  font-family: 'PP Editorial Old Ultra Bold';
-  src: url('/fonts/pp-editorial-old-ultrabold.otf') format('opentype');
+  font-family: 'PP Editorial Old Regular';
+  src: url('/fonts/pp-editorial-old-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'PP Editorial Old Ultra Light';
   src: url('/fonts/pp-editorial-old-ultralight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial Old Ultra Bold';
+  src: url('/fonts/pp-editorial-old-ultrabold.otf') format('opentype');
 }
 
 /* color */
@@ -34,6 +39,18 @@
 
 .bg-tertiary {
   background-color: #f9edde;
+}
+
+.bg-quaternary {
+  background-color: #fffaf4;
+}
+
+.bg-quinary {
+  background-color: #768607;
+}
+
+.bg-quinary-light {
+  background-color: #ad1a1b;
 }
 
 /* text */
@@ -57,6 +74,26 @@
   color: #515726;
 }
 
+.text-quinary {
+  color: #656464;
+}
+
+.text-quinary-light {
+  color: #fffaf4;
+}
+
+.text-quinary-dark {
+  color: #5f6d02;
+}
+
+.text-quinary-dark-light {
+  color: #851718;
+}
+
+.text-quinary-dark-light-2 {
+  color: #686f34;
+}
+
 /* border */
 .border-primary {
   border-color: #ad1a1b;
@@ -72,6 +109,14 @@
 
 .border-quaternary {
   border-color: #515726;
+}
+
+.border-quinary-light {
+  border-color: #ad1a1b;
+}
+
+.border-quinary-dark {
+  border-color: #5f6d02;
 }
 
 /* font */
@@ -91,6 +136,10 @@
   font-family: 'PP Pangaia Medium Italic', sans-serif;
 }
 
+.font-editorial-old-regular {
+  font-family: 'PP Editorial Old Regular', sans-serif;
+}
+
 .font-editorial-old-ultralight {
   font-family: 'PP Editorial Old Ultra Light', sans-serif;
 }
@@ -104,4 +153,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s infinite linear;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

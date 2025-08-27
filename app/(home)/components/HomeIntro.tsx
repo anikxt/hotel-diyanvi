@@ -3,7 +3,7 @@ import React from 'react';
 function HomeIntroSection() {
   return (
     <div className="bg-primary h-[calc(100vh-100px)] flex flex-col justify-center items-center">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 mt-16">
         <h2 className="text-primary font-pangaia-medium text-center text-7xl font-medium leading-tight">
           Where Luxury <br /> Finds Its True Expression
         </h2>
