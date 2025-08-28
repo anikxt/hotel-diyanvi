@@ -110,7 +110,7 @@ function HotelInformation() {
         </div>
       </div>
 
-      <div className="flex w-dvw gap-12">
+      <div className="flex w-full gap-12">
         <div className="w-[30%] h-[600px] relative ml-16">
           <Image
             src="/images/rooms/image-4.jpg"
