@@ -71,7 +71,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-30 h-[40px] w-[200px] border-1 border-quinary-light flex items-center justify-center">
+        <div className="absolute bottom-8 left-30 h-[41px] w-[202px] border-1 border-quinary-light flex items-center justify-center">
           <div className="bg-quinary-light px-16 py-2 font-editorial-old-regular text-quinary-light normal-case leading-tight tracking-tight text-base">
             Contact Us
           </div>
