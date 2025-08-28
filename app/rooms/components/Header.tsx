@@ -2,29 +2,13 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 
-const ROUTE_BG: Record<string, string> = {
-  '/': '/images/home/header-background.jpg',
-  '/rooms': '/images/rooms/header-background.jpg',
-  '/restaurant': '/images/restaurant/header-background.jpg',
-};
-
-function Header({ title }: { title: string }) {
-  const pathname = usePathname();
-
-  const routeKey =
-    Object.keys(ROUTE_BG)
-      .sort((a, b) => b.length - a.length)
-      .find((key) => pathname?.startsWith(key)) ?? '/';
-
-  const bgSrc = ROUTE_BG[routeKey];
-
+function Header() {
   return (
     <div className="relative w-full h-screen">
       {/* Background */}
       <Image
-        src={bgSrc}
+        src="/images/rooms/header-background.jpg"
         alt="Diyanvi Background"
         fill
         className="object-cover"
@@ -53,8 +37,8 @@ function Header({ title }: { title: string }) {
 
       {/* Title + Stars */}
       <div className="relative z-20 top-1 h-full flex flex-col gap-5 items-center justify-center">
-        <h1 className="text-white font-pangaia-medium text-[200px] font-medium leading-none tracking-tight">
-          {title}
+        <h1 className="text-white font-pangaia-medium text-9xl font-medium leading-none tracking-tight">
+          Stay at The Diyanvi
         </h1>
 
         <div className="flex items-center gap-4 text-white">

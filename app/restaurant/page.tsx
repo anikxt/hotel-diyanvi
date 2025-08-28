@@ -1,20 +1,19 @@
 import React from 'react';
-
 import {
+  BarAndLivingRoom,
+  Cuisine,
+  CulinaryExperience,
   Header,
-  RoomsAndSuites,
-  SpecialRequests,
-  HotelInformation,
 } from './components';
 import Footer from '../components/layout/Footer';
 
 function page() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
-      <RoomsAndSuites />
-      <SpecialRequests />
-      <HotelInformation />
+      <BarAndLivingRoom />
+      <Cuisine />
+      <CulinaryExperience />
       <Footer />
     </div>
   );
