@@ -94,6 +94,14 @@
   color: #686f34;
 }
 
+.text-rooms-1 {
+  color: #353434;
+}
+
+.text-rooms-2 {
+  color: #752e21;
+}
+
 /* border */
 .border-primary {
   border-color: #ad1a1b;
@@ -117,6 +125,14 @@
 
 .border-quinary-dark {
   border-color: #5f6d02;
+}
+
+.border-rooms-1 {
+  border-color: #48120f;
+}
+
+.border-rooms-2 {
+  border-color: #ffb6b7;
 }
 
 /* font */
