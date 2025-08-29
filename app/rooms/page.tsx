@@ -1,17 +1,16 @@
 import React from 'react';
 
 import {
-  Header,
   RoomsAndSuites,
   SpecialRequests,
   HotelInformation,
 } from './components';
-import Footer from '../components/layout/Footer';
+import { Footer, Header } from '../components/layout';
 
 function page() {
   return (
     <div>
-      <Header />
+      <Header title="Stay At The Diyanvi" fontSize="text-9xl" />
       <RoomsAndSuites />
       <SpecialRequests />
       <HotelInformation />

@@ -10,7 +10,7 @@ const ROUTE_BG: Record<string, string> = {
   '/restaurant': '/images/restaurant/header-background.jpg',
 };
 
-function Header({ title }: { title: string }) {
+function Header({ title, fontSize }: { title: string; fontSize: string }) {
   const pathname = usePathname();
 
   const routeKey =
@@ -53,7 +53,9 @@ function Header({ title }: { title: string }) {
 
       {/* Title + Stars */}
       <div className="relative z-20 top-1 h-full flex flex-col gap-5 items-center justify-center">
-        <h1 className="text-white font-pangaia-medium text-[200px] font-medium leading-none tracking-tight">
+        <h1
+          className={`text-white font-pangaia-medium ${fontSize} font-medium leading-none tracking-tight`}
+        >
           {title}
         </h1>
 

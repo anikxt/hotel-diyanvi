@@ -1,18 +1,17 @@
 import React from 'react';
 import {
-  Header,
   HomeIntro,
   AboutSection,
   ServicesOverview,
   WelcomeToHotel,
   SignatureOfferings,
 } from './components';
-import Footer from '../components/layout/Footer';
+import { Footer, Header } from '../components/layout';
 
 export default function Page() {
   return (
     <div>
-      <Header />
+      <Header title="Diyanvi" fontSize="text-[200px]" />
       <HomeIntro />
       <AboutSection />
       <ServicesOverview />
