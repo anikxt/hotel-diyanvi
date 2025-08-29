@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import MenuDrawer from '../drawer/MenuDrawer';
 
 const ROUTE_BG: Record<string, string> = {
   '/': '/images/home/header-background.jpg',
@@ -12,6 +13,7 @@ const ROUTE_BG: Record<string, string> = {
 
 function Header({ title, fontSize }: { title: string; fontSize: string }) {
   const pathname = usePathname();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const routeKey =
     Object.keys(ROUTE_BG)
@@ -21,56 +23,67 @@ function Header({ title, fontSize }: { title: string; fontSize: string }) {
   const bgSrc = ROUTE_BG[routeKey];
 
   return (
-    <div className="relative w-full h-screen">
-      {/* Background */}
-      <Image
-        src={bgSrc}
-        alt="Diyanvi Background"
-        fill
-        className="object-cover"
-        priority
+    <>
+      {/* Menu Drawer */}
+      <MenuDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
       />
 
-      {/* Hamburger Menu */}
-      <div className="absolute left-10 top-10 z-20">
+      {/* Background */}
+      <div className="relative w-full h-screen">
         <Image
-          src="/images/common icon/hamburger-menu.png"
-          alt="Hamburger Menu"
-          width={32}
-          height={32}
+          src={bgSrc}
+          alt="Diyanvi Background"
+          fill
+          className="object-cover"
+          priority
         />
-      </div>
 
-      {/* Logo */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
-        <Image
-          src="/images/common icon/logo.png"
-          alt="Diyanvi Logo"
-          width={64}
-          height={64}
-        />
-      </div>
-
-      {/* Title + Stars */}
-      <div className="relative z-20 top-1 h-full flex flex-col gap-5 items-center justify-center">
-        <h1
-          className={`text-white font-pangaia-medium ${fontSize} font-medium leading-none tracking-tight`}
+        {/* Hamburger Menu Button */}
+        <button
+          onClick={() => setIsDrawerOpen(true)}
+          className="absolute left-10 top-10 z-100 p-3 cursor-pointer hover:bg-white/15 rounded-full transition-colors"
         >
-          {title}
-        </h1>
+          <Image
+            src="/images/common icon/hamburger-menu.png"
+            alt="Hamburger Menu"
+            width={32}
+            height={32}
+          />
+        </button>
 
-        <div className="flex items-center gap-4 text-white">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <svg key={i} width="15" height="15" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M12 2l2.9 6.1L22 9.3l-5 4.9L18.2 21 12 17.7 5.8 21 7 14.2 2 9.3l7.1-1.2z"
-              />
-            </svg>
-          ))}
+        {/* Logo Image */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
+          <Image
+            src="/images/common icon/logo.png"
+            alt="Diyanvi Logo"
+            width={64}
+            height={64}
+          />
+        </div>
+
+        {/* Title + Stars Image */}
+        <div className="relative z-20 top-1 h-full flex flex-col gap-5 items-center justify-center">
+          <h1
+            className={`text-white font-pangaia-medium ${fontSize} font-medium leading-none tracking-tight`}
+          >
+            {title}
+          </h1>
+
+          <div className="flex items-center gap-4 text-white">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <svg key={i} width="15" height="15" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12 2l2.9 6.1L22 9.3l-5 4.9L18.2 21 12 17.7 5.8 21 7 14.2 2 9.3l7.1-1.2z"
+                />
+              </svg>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

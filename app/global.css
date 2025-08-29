@@ -53,6 +53,10 @@
   background-color: #ad1a1b;
 }
 
+.bg-menu-1 {
+  background-color: #f5eadc;
+}
+
 /* text */
 .text-primary {
   color: #ad1a1b;
@@ -114,6 +118,10 @@
   color: #63710f;
 }
 
+.text-menu-1 {
+  color: #724e47;
+}
+
 /* border */
 .border-primary {
   border-color: #ad1a1b;
@@ -145,6 +153,10 @@
 
 .border-rooms-2 {
   border-color: #ffb6b7;
+}
+
+.border-menu-1 {
+  border-color: #d4d4d4;
 }
 
 /* font */
