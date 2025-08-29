@@ -5,6 +5,7 @@ import {
   ServicesOverview,
   WelcomeToHotel,
   SignatureOfferings,
+  InclusiveExperience,
 } from './components';
 import { Footer, Header } from '../components/layout';
 
@@ -17,6 +18,7 @@ export default function Page() {
       <ServicesOverview />
       <WelcomeToHotel />
       <SignatureOfferings />
+      <InclusiveExperience />
       <Footer />
     </div>
   );
