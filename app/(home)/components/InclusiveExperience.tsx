@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 function InclusiveExperience() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col items-center pb-32">
+    <div className="bg-primary min-h-screen flex flex-col items-center">
       <h2 className="text-center text-quaternary font-pangaia-medium text-8xl font-medium w-[90%] border-b-2 border-b-gray-400 border-opacity-80 pb-10 pt-32">
         Enjoy An All-Inclusive Experience
       </h2>
 
       <div className="flex justify-center gap-12 mt-32 w-[90%] border-b-2 border-b-gray-400 border-opacity-80 pb-20">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-[30%]">
           <p className="text-primary font-editorial-old-ultrabold text-2xl max-w-[60ch]">
             Ground Floor - Vegetarian Restaurant
           </p>
@@ -84,7 +84,7 @@ function InclusiveExperience() {
       </div>
 
       <div className="flex justify-center gap-12 mt-32 w-[90%] border-b-2 border-b-gray-400 border-opacity-80 pb-20">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-[30%]">
           <p className="text-primary font-editorial-old-ultrabold text-2xl max-w-[60ch]">
             First Floor - Non-Veg Restaurant
           </p>
@@ -159,7 +159,7 @@ function InclusiveExperience() {
       </div>
 
       <div className="flex justify-center gap-12 mt-32 w-[90%] border-b-2 border-b-gray-400 border-opacity-80 pb-20">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-[30%]">
           <p className="text-primary font-editorial-old-ultrabold text-2xl max-w-[25ch]">
             Second & Third Floors - Rooms & Lodging
           </p>
@@ -226,7 +226,7 @@ function InclusiveExperience() {
       </div>
 
       <div className="flex justify-center gap-12 mt-32 w-[90%] mb-32">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-[30%]">
           <p className="text-primary font-editorial-old-ultrabold text-2xl max-w-[25ch]">
             Fourth Floor - Rooftop Resto Cafe
           </p>
@@ -281,6 +281,36 @@ function InclusiveExperience() {
               </p>
             </div>
           </span>
+        </div>
+      </div>
+
+      <div className="flex gap-16 h-[600px] w-full my-32">
+        {/* left */}
+        <div className="flex-1 h-auto">
+          <Image
+            src="/images/home/image-4.jpg"
+            alt="About The Diyanvi 4"
+            width={800}
+            height={800}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* right */}
+        <div className="w-[30%] flex flex-col gap-20 mr-16">
+          <div className="flex flex-col items-start justify-center gap-10 h-full">
+            <h3 className="text-quaternary font-pangaia-medium text-left text-4xl font-medium leading-relaxed tracking-tight max-w-[40ch]">
+              Where Comfort Meets Flavor, And Hospitality Feels Like Home.
+            </h3>
+
+            <p className="text-secondary font-roboto text-left text-lg font-medium leading-snug tracking-tight max-w-[50ch]">
+              At Hotel Diyanvi, we go beyond food and lodging - we deliver
+              experiences that celebrate Mysuru's culture, hospitality, and
+              warmth. Whether you're here for a quick meal, a weekend getaway,
+              or a night under the stars, our team is committed to making every
+              moment unforgettable.
+            </p>
+          </div>
         </div>
       </div>
     </div>
