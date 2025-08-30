@@ -4,7 +4,7 @@ import Image from 'next/image';
 function InclusiveExperience() {
   return (
     <div className="bg-primary flex flex-col items-center pb-32 sm:pt-24 md:pt-0 xl:pt-32">
-      <h2 className="mt-0 sm:mt-16 md:mt-32 xl:mt-0 text-left sm:text-center text-quaternary font-pangaia-medium text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium w-[90%] border-b-2 border-b-gray-400 border-opacity-80">
+      <h2 className="mt-0 sm:mt-16 md:mt-32 xl:mt-0 text-left sm:text-center text-quaternary font-pangaia-medium text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium w-[90%] border-b-2 pb-6 sm:pb-12 border-b-gray-400 border-opacity-80">
         Enjoy An All-Inclusive Experience
       </h2>
 

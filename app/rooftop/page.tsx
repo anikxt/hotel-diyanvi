@@ -4,8 +4,8 @@ import {
   CelebrateTheView,
   ServicesOverview,
   HappyHour,
-  Footer,
 } from './components';
+import { Footer } from '../components/layout';
 
 function page() {
   return (
