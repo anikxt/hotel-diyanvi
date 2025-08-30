@@ -12,7 +12,10 @@ import { Footer, Header } from '../components/layout';
 export default function Page() {
   return (
     <div>
-      <Header title="Diyanvi" fontSize="text-[200px]" />
+      <Header
+        title="Diyanvi"
+        fontSize="text-[80px] sm:text-[90px] md:text-[120px] lg:text-[150px] xl:text-[180px] 2xl:text-[200px]"
+      />
       <HomeIntro />
       <AboutSection />
       <ServicesOverview />

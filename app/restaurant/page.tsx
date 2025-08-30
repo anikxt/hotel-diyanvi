@@ -5,7 +5,10 @@ import { Footer, Header } from '../components/layout';
 function page() {
   return (
     <div className="overflow-hidden">
-      <Header title="A Dining Experience" fontSize="text-9xl" />
+      <Header
+        title="A Dining Experience"
+        fontSize="text-center text-[64px] sm:text-[78px] md:text-[90px] lg:text-[112px] xl:text-[120px] 2xl:text-[128px]"
+      />
       <BarAndLivingRoom />
       <Cuisine />
       <CulinaryExperience />

@@ -3,32 +3,41 @@ import Image from 'next/image';
 
 function AboutSection() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col gap-32">
-      <div className="w-auto h-auto self-start mt-16">
+    <div className="bg-primary min-h-screen flex flex-col gap-12 sm:gap-32">
+      <div className="w-auto h-auto self-start mt-16 sm:mt-0 lg:mt-16">
         <Image
           src="/images/home/image-1.jpg"
           alt="About The Diyanvi 1"
           width={1440}
           height={600}
-          className="object-cover"
+          className="w-[90vw] object-cover"
         />
       </div>
 
-      <div className="text-primary font-pangaia-medium text-left text-8xl font-medium leading-tight ml-16">
-        <h2>Diyanvi Timeless</h2>
-        <h2 className="font-pangaia-medium-italic">Retreat In India</h2>
+      <div className="pt-8 sm:pt-0 text-primary font-pangaia-medium text-5xl sm:text-6xl md:text-7xl xl:text-[80px] 2xl:text-8xl font-medium leading-tight sm:ml-16">
+        <h2 className="text-center sm:text-left max-w-[10ch] sm:max-w-prose mx-auto sm:mx-0">
+          Diyanvi Timeless
+        </h2>
+        <h2 className="font-pangaia-medium-italic text-center sm:text-left max-w-[10ch] sm:max-w-prose mx-auto sm:mx-0">
+          Retreat In India
+        </h2>
       </div>
 
-      <div className="flex mx-16 mb-16 h-[700px]">
+      <div className="flex flex-col sm:flex-row gap-16 sm:gap-0 justify-center sm:mx-16 sm:mb-16 sm:h-[700px]">
         {/* left */}
-        <div className="w-[30%] flex flex-col gap-20 mr-6">
+        <div className="sm:w-[30%] flex flex-col sm:items-start gap-12 sm:gap-16 sm:mr-6">
           <div className="flex flex-col gap-10">
-            <p className="text-primary font-editorial-old-ultrabold text-left text-lg font-medium leading-relaxed tracking-tight max-w-[32ch]">
+            <p className="block sm:hidden w-full mx-auto sm:mx-0 text-primary font-editorial-old-regular sm:font-editorial-old-ultrabold text-center sm:text-left text-lg sm:text-lg font-medium leading-normal lg:leading-relaxed sm:tracking-tight max-w-[32ch]">
               Experience the perfect blend of comfort and elegance in our
               thoughtfully designed rooms and suites
             </p>
 
-            <p className="text-secondary font-roboto text-left text-lg font-medium leading-normal tracking-tight max-w-[45ch]">
+            <p className="hidden sm:block w-full mx-auto sm:mx-0 text-primary font-editorial-old-ultrabold text-center sm:text-left text-lg sm:text-lg font-medium leading-normal lg:leading-relaxed sm:tracking-tight max-w-[32ch]">
+              Experience the perfect blend of comfort and elegance in our
+              thoughtfully designed rooms and suites
+            </p>
+
+            <p className="text-secondary font-roboto text-center sm:text-left text-base lg:text-lg font-medium leading-normal lg:leading-relaxed tracking-tight max-w-[38ch] sm:max-w-[45ch]">
               Discover the seamless harmony of comfort and elegance in our
               exquisitely designed rooms and suites. Each detail is curated to
               evoke peace, sophistication, and warmth. Enter a sanctuary where
@@ -36,18 +45,18 @@ function AboutSection() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-24 flex-1">
-            <h3 className="w-fit text-tertiary font-calistoga text-2xl font-medium leading-tight uppercase border-b-2 border-primary">
+          <div className="flex flex-col gap-12 flex-1 w-full">
+            <h3 className="w-fit mx-auto text-tertiary font-calistoga text-xl sm:text-2xl font-medium leading-tight uppercase border-b-2 border-primary">
               Our Rooms
             </h3>
 
-            <div className="flex justify-end flex-1 h-auto ">
+            <div className="hidden 2xl:flex justify-end flex-1 h-auto ">
               <Image
                 src="/images/home/image-2.jpg"
                 alt="about-the-diyanvi-2"
                 width={1200}
                 height={1200}
-                className="h-full w-[40%] object-cover"
+                className="h-auto w-[12vw] object-cover"
               />
             </div>
           </div>
@@ -60,7 +69,7 @@ function AboutSection() {
             alt="About The Diyanvi 3"
             width={1200}
             height={1200}
-            className="w-full h-full object-cover"
+            className="sm:w-[60vw] h-[100vh] sm:h-full object-cover"
           />
         </div>
       </div>

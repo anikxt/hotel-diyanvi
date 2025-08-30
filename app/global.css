@@ -195,6 +195,26 @@
   box-sizing: border-box;
 }
 
+/* Reset and fix viewport issues */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix mobile viewport height issues */
+.min-h-screen-safe {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+}
+
+.h-screen-safe {
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile */
+}
+
 /* animation */
 @keyframes scroll {
   0% {
