@@ -40,12 +40,12 @@ function BarAndLivingRoom() {
             className="hidden md:block object-cover"
           />
 
-          <p className="text-primary font-editorial-old-regular text-center md:text-left text-xl font-medium leading-normal tracking-wide max-w-[35ch]">
+          <p className="text-primary font-editorial-old-regular text-center md:text-left text-lg md:text-xl font-medium leading-normal tracking-wide max-w-[35ch]">
             Indulge In Our Signature Dine Inn Experience, Where Culinary
             Storytelling Meets World-Class Service.
           </p>
 
-          <p className="text-secondary font-roboto text-center md:text-left text-lg font-medium leading-normal tracking-tight max-w-[34ch] md:max-w-[44ch]">
+          <p className="text-secondary font-roboto text-center md:text-left text-base md:text-lg font-medium leading-normal tracking-tight max-w-[34ch] md:max-w-[44ch]">
             At our restaurant, we believe dining is more than just a meal — it's
             an experience. With a warm and welcoming ambiance, we bring together
             flavours that celebrate both tradition and creativity. Every dish is

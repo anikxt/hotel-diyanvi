@@ -14,7 +14,7 @@ function SpecialRequests() {
       </div>
 
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[300px] md:w-[700px] h-[600px] md:h-[440px] bg-primary flex flex-col gap-10 items-center justify-center">
+        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[320px] md:w-[700px] h-[600px] md:h-[440px] bg-primary flex flex-col gap-10 items-center justify-center">
           <span className="text-primary font-editorial-old-regular text-3xl md:text-5xl font-medium tracking-wide mt-4">
             Special Requests ?
           </span>
@@ -30,8 +30,8 @@ function SpecialRequests() {
               Enquire Now
             </div>
           </div>
-          <div className="absolute top-5 left-5.5 border-2 border-rooms-1 w-[260px] md:w-[660px] h-[560px] md:h-[400px]"></div>
-          <div className="absolute top-6.5 left-7 border-1 border-rooms-1 w-[248px] md:w-[648px] h-[548px] md:h-[388px]"></div>
+          <div className="absolute top-5 left-5.5 border-2 border-rooms-1 w-[280px] md:w-[660px] h-[560px] md:h-[400px]"></div>
+          <div className="absolute top-6.5 left-7 border-1 border-rooms-1 w-[267.5px] md:w-[648px] h-[548px] md:h-[388px]"></div>
         </div>
       </div>
     </div>
