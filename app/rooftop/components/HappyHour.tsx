@@ -43,7 +43,7 @@ function HappyHour() {
 
       {/* view */}
       <div className="absolute top-[45%] sm:top-[45%] left-[50%] xl:top-[50%] xl:left-[20%] translate-x-[-50%] sm:rotate-2 border-2 border-quaternary bg-white p-2 sm:p-4 flex flex-col items-center justify-center gap-8">
-        <div className="flex flex-col items-center justify-start pt-2 gap-12 border-1 border-quaternary w-[315px] sm:w-[420px] h-[435px] sm:h-[524px]">
+        <div className="flex flex-col items-center justify-start pt-2 gap-12 border-1 border-quaternary w-[315px] sm:w-[420px] h-[460px] sm:h-[524px] sm:mt-0">
           <div>
             <Image
               src="/images/rooftop/image-5.jpg"
