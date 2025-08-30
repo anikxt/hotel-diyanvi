@@ -4,7 +4,7 @@ import Image from 'next/image';
 function CulinaryExperience() {
   return (
     <div className="bg-primary min-h-screen flex flex-col items-start gap-10 pb-32">
-      <div className="text-primary font-pangaia-medium text-left text-6xl font-medium leading-tight tracking-wide max-w-[28ch] mt-32 pl-32 ">
+      <div className="text-primary font-pangaia-medium text-left text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-wide max-w-[20ch] sm:max-w-[30ch] mt-24 md:mt-32 pl-8 sm:pl-16 lg:pl-32">
         <h3>Culinary Excellence Meets The Highest In Alpine Tradition</h3>
 
         <h3>
@@ -12,16 +12,16 @@ function CulinaryExperience() {
         </h3>
       </div>
 
-      <div className="flex gap-32 pl-32 mt-16 w-full">
-        <div className="flex flex-col gap-12">
-          <p className="text-primary font-editorial-old-regular text-left text-xl font-medium leading-normal tracking-wide max-w-[38ch]">
-            The Diyanvi Is More Than A Restaurant—It’s A Place Where Flavors,
+      <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-16 xl:gap-32 pr-4 md:pr-8 xl:pr-0 pl-8 sm:pl-16 lg:pl-32 mt-8 md:mt-12 lg:mt-16 w-full">
+        <div className="flex flex-col gap-6 md:gap-12">
+          <p className="text-primary font-editorial-old-regular text-left text-lg sm:text-xl font-medium leading-normal tracking-wide max-w-[38ch]">
+            The Diyanvi Is More Than A Restaurant—It's A Place Where Flavors,
             Stories, And People Come Together. From A Hearty Breakfast To A
             Crafted Three-Course Dinner, Every Meal Is Thoughtfully Prepared And
             Served With Care.
           </p>
 
-          <p className="text-secondary font-roboto text-left text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
+          <p className="text-secondary font-roboto text-left text-base sm:text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
             It's not just about food, but about creating moments. At The Haven,
             we believe dining should feel warm, comforting, and memorable. Our
             menus bring together the richness of seasonal ingredients, timeless
@@ -32,12 +32,12 @@ function CulinaryExperience() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-12">
-          <p className="text-secondary font-roboto text-left text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
+        <div className="flex flex-col gap-6 md:gap-12">
+          <p className="text-secondary font-roboto text-left text-base sm:text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
             At The Haven, dining is about slowing down, savoring every bite, and
             enjoying life at your own pace.
           </p>
-          <p className="text-secondary font-roboto text-left text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
+          <p className="text-secondary font-roboto text-left text-base sm:text-lg font-medium leading-normal tracking-tight max-w-[48ch]">
             And for those who linger after their meal, the café bar offers a
             curated selection of fine wines, freshly brewed coffee, and
             artisanal desserts. Every plate is crafted with simplicity and
@@ -46,41 +46,41 @@ function CulinaryExperience() {
         </div>
       </div>
 
-      <div className="flex items-start gap-12 mt-24 mb-40 w-full">
+      <div className="flex items-start gap-4 md:gap-8 lg:gap-12 mt-12 md:mt-24 mb-16 md:mb-40 w-full">
         <Image
           src="/images/restaurant/image-5.jpg"
           alt="Culinary Experience"
           width={400}
           height={300}
-          className="object-contain "
+          className="w-[180px] md:w-[400px] object-contain "
         />
         <Image
           src="/images/restaurant/image-6.jpg"
           alt="Culinary Experience"
           width={400}
           height={300}
-          className="object-contain"
+          className="w-[180px] md:w-[400px] object-contain"
         />
         <Image
           src="/images/restaurant/image-7.jpg"
           alt="Culinary Experience"
           width={350}
           height={300}
-          className="object-contain"
+          className="w-[180px] md:w-[400px] object-contain"
         />
         <Image
           src="/images/restaurant/image-8.jpg"
           alt="Culinary Experience"
           width={250}
           height={300}
-          className="object-contain"
+          className="hidden md:block object-contain"
         />
         <Image
           src="/images/restaurant/image-9.jpg"
           alt="Culinary Experience"
           width={200}
           height={300}
-          className="object-contain"
+          className="hidden md:block object-contain"
         />
       </div>
     </div>
