@@ -43,7 +43,9 @@ function Header({ title, fontSize }: { title: string; fontSize: string }) {
         {/* Hamburger Menu Button */}
         <button
           onClick={() => setIsDrawerOpen(true)}
-          className="absolute left-5 top-5 sm:left-10 sm:top-10 z-100 p-3 cursor-pointer hover:bg-white/15 rounded-full transition-colors"
+          className={`absolute left-5 top-5 sm:left-10 sm:top-10 z-100 p-3 cursor-pointer hover:bg-white/15 rounded-full transition-colors ${
+            isDrawerOpen ? 'hidden' : ''
+          }`}
         >
           <Image
             src="/images/common icon/hamburger-menu.png"
