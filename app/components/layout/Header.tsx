@@ -30,62 +30,60 @@ function Header({ title, fontSize }: { title: string; fontSize: string }) {
         onClose={() => setIsDrawerOpen(false)}
       />
 
+      {/* Hamburger Menu Button */}
+      <button
+        onClick={() => setIsDrawerOpen(true)}
+        className={`absolute left-5 top-5 sm:left-10 sm:top-10 z-100 p-3 cursor-pointer hover:bg-white/15 rounded-full transition-colors ${
+          isDrawerOpen ? 'hidden' : ''
+        }`}
+      >
+        <Image
+          src="/images/common icon/hamburger-menu.png"
+          alt="Hamburger Menu"
+          width={40}
+          height={40}
+        />
+      </button>
+
       {/* Background */}
-      <div className="relative">
-        {/* Hamburger Menu Button */}
-        <button
-          onClick={() => setIsDrawerOpen(true)}
-          className={`absolute left-5 top-5 sm:left-10 sm:top-10 z-100 p-3 cursor-pointer hover:bg-white/15 rounded-full transition-colors ${
-            isDrawerOpen ? 'hidden' : ''
-          }`}
-        >
+      <div className="sticky top-0 z-[-10]">
+        <div className="relative w-full h-screen">
           <Image
-            src="/images/common icon/hamburger-menu.png"
-            alt="Hamburger Menu"
-            width={40}
-            height={40}
+            src={bgSrc}
+            alt="Diyanvi Background"
+            fill
+            className="object-cover"
+            priority
           />
-        </button>
 
-        <div className="sticky top-0 z-[-10]">
-          <div className="relative w-full h-screen">
+          {/* Logo Image */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
             <Image
-              src={bgSrc}
-              alt="Diyanvi Background"
-              fill
-              className="object-cover"
-              priority
+              src="/images/common icon/logo.png"
+              alt="Diyanvi Logo"
+              width={64}
+              height={64}
+              className="w-13 h-13 sm:w-14 sm:h-14 md:w-15 md:h-15 2xl:w-16 2xl:h-16"
             />
+          </div>
 
-            {/* Logo Image */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
-              <Image
-                src="/images/common icon/logo.png"
-                alt="Diyanvi Logo"
-                width={64}
-                height={64}
-                className="w-13 h-13 sm:w-14 sm:h-14 md:w-15 md:h-15 2xl:w-16 2xl:h-16"
-              />
-            </div>
+          {/* Title + Stars Image */}
+          <div className="pt-8 sm:pt-0 relative z-20 top-1 h-full flex flex-col gap-3 sm:gap-5 items-center justify-center">
+            <h1
+              className={`text-white font-pangaia-medium ${fontSize} font-medium leading-none tracking-tight`}
+            >
+              {title}
+            </h1>
 
-            {/* Title + Stars Image */}
-            <div className="pt-8 sm:pt-0 relative z-20 top-1 h-full flex flex-col gap-3 sm:gap-5 items-center justify-center">
-              <h1
-                className={`text-white font-pangaia-medium ${fontSize} font-medium leading-none tracking-tight`}
-              >
-                {title}
-              </h1>
-
-              <div className="flex items-center gap-2 sm:gap-4 text-white">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <svg key={i} width="15" height="15" viewBox="0 0 24 24">
-                    <path
-                      fill="currentColor"
-                      d="M12 2l2.9 6.1L22 9.3l-5 4.9L18.2 21 12 17.7 5.8 21 7 14.2 2 9.3l7.1-1.2z"
-                    />
-                  </svg>
-                ))}
-              </div>
+            <div className="flex items-center gap-2 sm:gap-4 text-white">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg key={i} width="15" height="15" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12 2l2.9 6.1L22 9.3l-5 4.9L18.2 21 12 17.7 5.8 21 7 14.2 2 9.3l7.1-1.2z"
+                  />
+                </svg>
+              ))}
             </div>
           </div>
         </div>
