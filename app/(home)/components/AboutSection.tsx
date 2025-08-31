@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function AboutSection() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col gap-12 sm:gap-32">
+    <div className="bg-primary min-h-[calc(100vh+200px)] flex flex-col gap-12 sm:gap-32">
       <div className="w-auto h-auto self-start mt-16 sm:mt-0 lg:mt-16">
         <Image
           src="/images/home/image-1.jpg"
