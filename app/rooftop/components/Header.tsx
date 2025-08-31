@@ -40,9 +40,9 @@ function Header() {
         <Image
           src="/images/common icon/hamburger-menu.png"
           alt="Hamburger Menu"
-          width={40}
-          height={40}
-          className="w-[30px] h-[30px] md:[w-40px] md:[h-40px]"
+          width={36}
+          height={36}
+          className="w-[30px] h-[30px] md:w-[36px] md:h-[36px]"
         />
       </button>
 
