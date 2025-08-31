@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface MenuDrawerProps {
   isOpen: boolean;
@@ -55,42 +56,56 @@ function MenuDrawer({ isOpen, onClose }: MenuDrawerProps) {
         </div>
 
         <div className="px-8 mt-6 2xl:mt-7">
-          <div className="flex flex-col gap-2 2xl:gap-3.5 px-2">
+          <div className="flex flex-col gap-2 2xl:gap-2 px-2">
             <h4 className="text-menu-1 font-roboto text-lg sm:text-xl font-medium tracking-normal">
               Hotel
             </h4>
-            <div className="flex items-center gap-6">
-              <Image
-                src="/images/menu/image-1.png"
-                alt="Diyanvi"
-                width={28}
-                height={28}
-              />
-              <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
-                Rooms & Suites
-              </p>
-            </div>
-            <div className="flex items-center gap-6">
-              <Image
-                src="/images/menu/image-2.png"
-                alt="Diyanvi"
-                width={28}
-                height={28}
-              />
-              <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
-                Restaurant
-              </p>
-            </div>
-            <div className="flex items-center gap-6">
-              <Image
-                src="/images/menu/image-3.png"
-                alt="Diyanvi"
-                width={28}
-                height={28}
-              />
-              <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
-                Rooftop Restro
-              </p>
+            <div className="flex flex-col gap-2 2xl:gap-0">
+              <Link
+                href="/rooms"
+                onClick={onClose}
+                className="flex items-center gap-6 hover:bg-[#f4ede4] 2xl:py-2 2xl:px-4 rounded-md transition-all duration-150 ease-in-out"
+              >
+                <Image
+                  src="/images/menu/image-1.png"
+                  alt="Diyanvi"
+                  width={28}
+                  height={28}
+                />
+                <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
+                  Rooms & Suites
+                </p>
+              </Link>
+              <Link
+                href="/restaurant"
+                onClick={onClose}
+                className="flex items-center gap-6 hover:bg-[#f4ede4] 2xl:py-2 2xl:px-4 rounded-md transition-all duration-150 ease-in-out"
+              >
+                <Image
+                  src="/images/menu/image-2.png"
+                  alt="Diyanvi"
+                  width={28}
+                  height={28}
+                />
+                <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
+                  Restaurant
+                </p>
+              </Link>
+              <Link
+                href="/rooftop"
+                onClick={onClose}
+                className="flex items-center gap-6 hover:bg-[#f4ede4] 2xl:py-2 2xl:px-4 rounded-md transition-all duration-150 ease-in-out"
+              >
+                <Image
+                  src="/images/menu/image-3.png"
+                  alt="Diyanvi"
+                  width={28}
+                  height={28}
+                />
+                <p className="text-primary pt-2 font-editorial-old-regular text-lg sm:text-xl font-medium">
+                  Rooftop Restro
+                </p>
+              </Link>
             </div>
           </div>
 
