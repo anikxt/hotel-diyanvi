@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function BarAndLivingRoom() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col pb-48 md:pb-0">
+    <div className="relative z-40 bg-primary min-h-screen flex flex-col pb-48 md:pb-0">
       <div className="text-quinary font-calistoga w-fit self-center text-center text-lg font-medium leading-tight mt-12">
         Elevated Evenings, Unforgettable Moments
       </div>

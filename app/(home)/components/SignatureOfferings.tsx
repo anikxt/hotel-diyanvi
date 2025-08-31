@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function SignatureOfferings() {
   return (
-    <div className="hidden md:flex flex-col bg-primary min-h-screen ">
+    <div className="hidden md:flex flex-col bg-primary min-h-screen relative z-40">
       {/* first */}
       <div className="text-quaternary font-roboto text-center text-lg uppercase font-medium tracking-tight flex flex-wrap justify-center gap-4">
         <div className="animate-scroll flex gap-4">

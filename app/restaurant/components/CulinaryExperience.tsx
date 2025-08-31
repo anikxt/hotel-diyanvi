@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function CulinaryExperience() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col items-start gap-10 pb-32">
+    <div className="relative z-40 bg-primary min-h-screen flex flex-col items-start gap-10 pb-32">
       <div className="text-primary font-pangaia-medium text-left text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-wide max-w-[20ch] sm:max-w-[30ch] mt-24 md:mt-32 pl-8 sm:pl-16 lg:pl-32">
         <h3>Culinary Excellence Meets The Highest In Alpine Tradition</h3>
 

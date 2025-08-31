@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function HotelInformation() {
   return (
-    <div className="min-h-screen bg-primary flex flex-col gap-16 items-center justify-center pb-48">
+    <div className="relative z-40 min-h-screen bg-primary flex flex-col gap-16 items-center justify-center pb-48">
       <div className="flex flex-col gap-6 md:gap-8 px-8 md:px-0 md:w-[60%] mt-24 md:mt-48">
         <div className="text-primary font-pangaia-medium text-left text-[42px] sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-tighter">
           <h2>Hotel & Room</h2>

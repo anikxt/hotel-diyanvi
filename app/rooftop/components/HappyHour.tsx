@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function HappyHour() {
   return (
-    <div className="relative bg-primary h-[1200px] sm:h-[1300px] flex flex-col">
+    <div className="relative z-40 bg-primary h-[1200px] sm:h-[1300px] flex flex-col">
       {/* title */}
       <div className="flex flex-col gap-10 sm:gap-20 md:gap-10 items-center justify-center mt-48">
         <h2 className="text-quaternary font-editorial-old-ultralight text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-[15ch] sm:max-w-[30ch] text-center font-medium leading-snug tracking-wide uppercase">

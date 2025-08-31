@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomeIntroSection() {
   return (
-    <div className="sticky -top-[15%] sm:top-0 z-[-5]">
+    <div className="sticky -top-[15%] sm:top-0 z-30">
       <div className="bg-primary h-[calc(100vh+100px)] sm:h-screen flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-8 mt-16">
           <h2 className="text-primary font-pangaia-medium text-center text-5xl sm:text-[55px] md:text-[70px] font-medium leading-tight pt-8 sm:pt-0 max-w-[10ch] sm:max-w-prose">

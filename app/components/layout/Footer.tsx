@@ -44,7 +44,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full relative flex flex-col gap-32 sm:gap-40 py-20 sm:py-40 items-center justify-center">
+    <div className="min-h-screen w-full relative z-40 flex flex-col gap-32 sm:gap-40 py-20 sm:py-40 items-center justify-center">
       <Image
         src="/images/home/image-6.jpg"
         alt="Footer 1"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function ServicesOverviewSection() {
   return (
-    <div className="relative bg-secondary flex flex-col md:gap-16 lg:gap-32 xl:gap-40 py-32 sm:py-48">
+    <div className="relative z-40 bg-secondary flex flex-col md:gap-16 lg:gap-32 xl:gap-40 py-32 sm:py-48">
       {/* title */}
       <div className="flex flex-col gap-10 items-center justify-center">
         <h2 className="text-tertiary-light font-editorial-old-ultralight text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-medium leading-snug tracking-wide uppercase">

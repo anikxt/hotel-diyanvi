@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function RoomsAndSuites() {
   return (
-    <div className="bg-primary flex flex-col justify-center items-center">
+    <div className="relative z-40 bg-primary flex flex-col justify-center items-center">
       <div className="flex flex-col gap-8 mt-24 md:mt-40">
         <h2 className="text-primary font-pangaia-medium text-center text-6xl md:text-7xl font-medium leading-tight max-w-[10ch] md:max-w-prose mx-auto">
           Our Rooms & Suites

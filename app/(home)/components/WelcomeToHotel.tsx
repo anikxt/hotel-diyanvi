@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function WelcomeToHotel() {
   return (
-    <div className="bg-primary min-h-screen flex flex-col">
+    <div className="bg-primary min-h-screen flex flex-col relative z-40">
       <div className="text-quinary font-calistoga w-fit self-center text-center text-lg font-medium leading-tight mt-12">
         About The Hotel
       </div>

@@ -33,7 +33,7 @@ function Header() {
       {/* Hamburger Menu Button */}
       <button
         onClick={() => setIsDrawerOpen(true)}
-        className={`absolute left-10 top-10 z-100 p-3 cursor-pointer hover:bg-white/10 rounded-full transition-colors ${
+        className={`absolute left-10 top-10 z-20 p-4 cursor-pointer hover:bg-white/10 rounded-full transition-colors ${
           isDrawerOpen ? 'hidden' : ''
         }`}
       >
@@ -45,7 +45,7 @@ function Header() {
         />
       </button>
 
-      <div className="sticky top-0 z-[-10]">
+      <div className="sticky top-0 z-10">
         <div className="relative w-full h-screen flex flex-col justify-end items-center sm:pb-10">
           {/* Background */}
           <Image

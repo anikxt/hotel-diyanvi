@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function CelebrateTheView() {
   return (
-    <div className="bg-primary md:h-[1500px] flex flex-col gap-16 md:gap-32">
+    <div className="relative z-40 bg-primary md:h-[1500px] flex flex-col gap-16 md:gap-32">
       {/* title */}
       <div className="flex flex-col gap-8 items-center justify-center mt-24 md:mt-32 lg:mt-48">
         <h2 className="text-quaternary font-editorial-old-ultralight text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-[15ch] sm:max-w-[30ch] text-center font-medium leading-snug tracking-wide uppercase">

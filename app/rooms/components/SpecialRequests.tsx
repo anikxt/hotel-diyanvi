@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function SpecialRequests() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative z-40 min-h-screen">
       <div className="w-full h-screen relative">
         <Image
           src="/images/rooms/image-3.jpg"
