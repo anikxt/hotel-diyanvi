@@ -33,7 +33,7 @@ function Header({ title, fontSize }: { title: string; fontSize: string }) {
       {/* Hamburger Menu Button */}
       <button
         onClick={() => setIsDrawerOpen(true)}
-        className={`absolute left-5 top-5 sm:left-10 sm:top-10 z-20 p-4 cursor-pointer hover:bg-white/15 pointer-events-auto rounded-full transition-colors ${
+        className={`absolute left-8 top-15 md:left-10 md:top-10 z-20 p-0 md:p-4 cursor-pointer hover:bg-white/10 pointer-events-auto rounded-full transition-colors ${
           isDrawerOpen ? 'hidden' : ''
         }`}
       >
@@ -42,6 +42,7 @@ function Header({ title, fontSize }: { title: string; fontSize: string }) {
           alt="Hamburger Menu"
           width={40}
           height={40}
+          className="w-[30px] h-[30px] md:[w-40px] md:[h-40px]"
         />
       </button>
 
