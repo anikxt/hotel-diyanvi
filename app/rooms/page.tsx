@@ -6,6 +6,7 @@ import {
   HotelInformation,
 } from './components';
 import { Footer, Header } from '../components/layout';
+import DummyComponent from '../components/utils/DummyComponent';
 
 function page() {
   return (
@@ -17,6 +18,7 @@ function page() {
       <RoomsAndSuites />
       <SpecialRequests />
       <HotelInformation />
+      <DummyComponent />
       <Footer />
     </div>
   );

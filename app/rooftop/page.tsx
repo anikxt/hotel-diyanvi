@@ -6,6 +6,7 @@ import {
   HappyHour,
 } from './components';
 import { Footer } from '../components/layout';
+import DummyComponent from '../components/utils/DummyComponent';
 
 function page() {
   return (
@@ -14,6 +15,7 @@ function page() {
       <CelebrateTheView />
       <ServicesOverview />
       <HappyHour />
+      <DummyComponent />
       <Footer />
     </div>
   );

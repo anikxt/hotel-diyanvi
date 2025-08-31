@@ -8,6 +8,7 @@ import {
   InclusiveExperience,
 } from './components';
 import { Footer, Header } from '../components/layout';
+import DummyComponent from '../components/utils/DummyComponent';
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
       <WelcomeToHotel />
       <SignatureOfferings />
       <InclusiveExperience />
+      <DummyComponent />
       <Footer />
     </div>
   );
