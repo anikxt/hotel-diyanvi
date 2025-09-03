@@ -6,11 +6,11 @@ function AboutSection() {
     <div className="relative bg-primary min-h-[calc(100vh+200px)] flex flex-col gap-12 sm:gap-32 z-40">
       <div className="w-auto h-auto self-start mt-16 sm:mt-0 lg:mt-16">
         <Image
-          src="/images/home/image-1.jpg"
+          src="/HOTEL IMAGES - WEBP/image-9.webp"
           alt="About The Diyanvi 1"
           width={1440}
           height={600}
-          className="w-[90vw] object-cover"
+          className="w-[90vw] h-[90vh] object-cover"
         />
       </div>
 
