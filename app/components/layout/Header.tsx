@@ -6,9 +6,9 @@ import { usePathname } from 'next/navigation';
 import MenuDrawer from '../drawer/MenuDrawer';
 
 const ROUTE_BG: Record<string, string> = {
-  '/': '/images/home/header-background.jpg',
-  '/rooms': '/images/rooms/header-background.jpg',
-  '/restaurant': '/images/restaurant/header-background.jpg',
+  '/': '/HOTEL IMAGES - WEBP/image-2.webp',
+  '/rooms': '/HOTEL IMAGES - WEBP/image-16.webp',
+  '/restaurant': '/HOTEL IMAGES - WEBP/image-5.webp',
 };
 
 function Header({ title, fontSize }: { title: string; fontSize: string }) {

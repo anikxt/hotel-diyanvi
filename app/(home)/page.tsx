@@ -15,7 +15,7 @@ export default function Page() {
     <div>
       <Header
         title="Diyanvi"
-        fontSize="text-[80px] sm:text-[90px] md:text-[120px] lg:text-[150px] xl:text-[180px] 2xl:text-[200px]"
+        fontSize="text-[80px] sm:text-[90px] md:text-[120px] lg:text-[150px] xl:text-[180px] 2xl:text-[150px]"
       />
       <HomeIntro />
       <AboutSection />

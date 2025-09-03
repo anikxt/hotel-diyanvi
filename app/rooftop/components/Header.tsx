@@ -50,7 +50,7 @@ function Header() {
         <div className="relative w-full h-screen flex flex-col justify-end items-center sm:pb-10">
           {/* Background */}
           <Image
-            src="/images/rooftop/header-background.jpg"
+            src="/HOTEL IMAGES - WEBP/image-1.webp"
             alt="Diyanvi Background"
             fill
             className="object-cover"

@@ -22,7 +22,7 @@ function BarAndLivingRoom() {
         {/* left */}
         <div className="flex-1 h-auto">
           <Image
-            src="/images/restaurant/image-2.jpg"
+            src="/HOTEL IMAGES - WEBP/image-1.webp"
             alt="Bar & Living Room"
             width={1200}
             height={1200}
